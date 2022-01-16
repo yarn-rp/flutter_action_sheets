@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 
 class ActionItem {
@@ -13,5 +15,5 @@ class ActionItem {
   final String text;
   final bool isDefaultAction;
   final bool isDestructiveAction;
-  final VoidCallback onTap;
+  final FutureOr<void> Function() onTap;
 }

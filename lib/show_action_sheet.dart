@@ -104,6 +104,6 @@ Future<void> showActionsSheetString(
   if (actions.any((element) => element.text == result)) {
     final _selectedItem =
         actions.firstWhere((element) => element.text == result);
-    _selectedItem.onTap();
+    await _selectedItem.onTap();
   }
 }
