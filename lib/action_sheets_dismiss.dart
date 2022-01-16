@@ -1,4 +1,4 @@
-part of 'action_sheets.dart';
+import 'package:flutter/material.dart';
 
 class ModalActionSheetDismiss extends StatelessWidget {
   const ModalActionSheetDismiss({
@@ -13,11 +13,7 @@ class ModalActionSheetDismiss extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: handleTap ??
-          () {
-            log('cancel');
-            Navigator.of(context).pop('cancel');
-          },
+      onTap: handleTap ?? () => Navigator.of(context).pop('cancel'),
       child: Container(
         padding: const EdgeInsets.symmetric(vertical: 16.0),
         height: 50,

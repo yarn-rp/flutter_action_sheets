@@ -1,4 +1,4 @@
-part of 'action_sheets.dart';
+import 'package:flutter/material.dart';
 
 class ModalActionSheetItem extends StatelessWidget {
   const ModalActionSheetItem({
