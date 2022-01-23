@@ -36,7 +36,6 @@ Future<void> showActionsSheetString(
                 'Cancelar',
                 style: TextStyle(
                   fontFamily: Theme.of(context).textTheme.bodyText1?.fontFamily,
-                  color: Theme.of(context).primaryColor,
                 ),
               ),
             ),
