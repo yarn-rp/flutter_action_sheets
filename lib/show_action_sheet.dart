@@ -49,9 +49,7 @@ Future<void> showActionsSheetString(
                   style: TextStyle(
                     fontFamily:
                         Theme.of(context).textTheme.bodyText1?.fontFamily,
-                    color: e.isDestructiveAction
-                        ? Theme.of(context).errorColor
-                        : Theme.of(context).primaryColor,
+                    color: e.textColor,
                   ),
                 ),
                 onPressed: () {
@@ -83,7 +81,7 @@ Future<void> showActionsSheetString(
               IndicatorUpperBottomSheet(
                 padding:
                     EdgeInsets.only(top: 8, bottom: header != null ? 12 : 0),
-                color: Theme.of(context).dividerColor,
+                color: Theme.of(context).dividerTheme.color,
               ),
               header ?? Container(),
               const SizedBox(

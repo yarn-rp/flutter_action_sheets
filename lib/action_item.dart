@@ -7,6 +7,7 @@ class ActionItem {
     this.text,
     this.iconData,
     this.onTap, {
+    this.textColor,
     this.isDefaultAction = false,
     this.isDestructiveAction = false,
   });
@@ -16,4 +17,5 @@ class ActionItem {
   final bool isDefaultAction;
   final bool isDestructiveAction;
   final FutureOr<void> Function() onTap;
+  final Color? textColor;
 }
